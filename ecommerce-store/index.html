@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUXEMART — Modern Shopping. Premium Experience.</title>
+<meta name="description" content="LUXEMART is a premium online store for fashion, footwear, electronics, and home goods — modern shopping with a premium experience.">
+<meta property="og:title" content="LUXEMART — Modern Shopping. Premium Experience.">
+<meta property="og:description" content="Discover fashion, footwear, electronics, and more at LUXEMART.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="page-loader"><div class="spinner"></div></div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">LUXE<span>MART</span></a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="search-bar" style="max-width:220px;">
+      <label for="header-search" class="visually-hidden">Search products</label>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="search" id="header-search" placeholder="Search products...">
+    </div>
+
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">
+        <span class="icon-sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+        <span class="icon-moon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
+      </button>
+      <a href="products.html?wishlist=1" class="icon-btn" aria-label="Wishlist" style="position:relative;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        <span class="count-badge" data-wishlist-count style="display:none;">0</span>
+      </a>
+      <a href="cart.html" class="icon-btn" aria-label="Cart" style="position:relative;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="count-badge" data-cart-count style="display:none;">0</span>
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-letterbox-top"></div>
+    <div class="hero-spotlight"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-vignette"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="hero-kicker-line"></span>
+        <span class="hero-eyebrow">New Season Arrivals</span>
+        <h1>Modern Shopping.<br>Premium Experience.</h1>
+        <p class="lead">Curated fashion, footwear, electronics, and home essentials — delivered with the care of a premium boutique.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-primary">Shop Now</a>
+          <a href="products.html?category=Men" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);color:#fff;">Explore Collections</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="width:120px;height:120px;opacity:0.85;position:relative;z-index:1;"><path d="M6 2l1.5 5h9L18 2"></path><path d="M4 7h16l-1.5 14h-13z"></path></svg>
+      </div>
+    </div>
+    <div class="hero-letterbox-bottom"></div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Shop by Category</span>
+        <h2>Find Exactly What You Need</h2>
+      </div>
+      <div class="category-grid" id="category-grid"></div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Handpicked</span>
+        <h2>Featured Products</h2>
+        <p>Our most popular pieces this season.</p>
+      </div>
+      <div class="product-grid" id="featured-grid"></div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Just In</span>
+        <h2>New Arrivals</h2>
+      </div>
+      <div class="product-grid" id="new-arrivals-grid"></div>
+    </div>
+  </section>
+
+  <!-- SPECIAL OFFERS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Limited Time</span>
+        <h2>Special Offers</h2>
+        <p>Save on select pieces while stocks last.</p>
+      </div>
+      <div class="product-grid" id="sale-grid"></div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow">Why LUXEMART</span>
+        <h2>Shopping, Made Premium</h2>
+      </div>
+      <div class="category-grid" style="grid-template-columns:repeat(4,1fr);">
+        <div class="card reveal" style="text-align:center;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:32px;height:32px;color:var(--color-royal);margin:0 auto 14px;"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          <h4 style="font-size:15px;margin-bottom:6px;">Fast Delivery</h4>
+          <p style="font-size:13.5px;color:var(--text-secondary);">Nationwide shipping, tracked door to door.</p>
+        </div>
+        <div class="card reveal" style="text-align:center;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:32px;height:32px;color:var(--color-royal);margin:0 auto 14px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <h4 style="font-size:15px;margin-bottom:6px;">Secure Payment</h4>
+          <p style="font-size:13.5px;color:var(--text-secondary);">Your transactions are always protected.</p>
+        </div>
+        <div class="card reveal" style="text-align:center;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:32px;height:32px;color:var(--color-royal);margin:0 auto 14px;"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+          <h4 style="font-size:15px;margin-bottom:6px;">Easy Returns</h4>
+          <p style="font-size:13.5px;color:var(--text-secondary);">30-day hassle-free return policy.</p>
+        </div>
+        <div class="card reveal" style="text-align:center;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:32px;height:32px;color:var(--color-royal);margin:0 auto 14px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <h4 style="font-size:15px;margin-bottom:6px;">Dedicated Support</h4>
+          <p style="font-size:13.5px;color:var(--text-secondary);">Real people, ready to help, every day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow">Customer Love</span>
+        <h2>What Shoppers Are Saying</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="card testimonial-card reveal">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <p class="testimonial-quote">"The quality is genuinely premium, and delivery was faster than I expected. My chelsea boots looked exactly like the photos."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AO</div>
+            <div><p class="author-name">Amaka O.</p><p class="author-role">Verified Buyer</p></div>
+          </div>
+        </div>
+        <div class="card testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <p class="testimonial-quote">"Customer support helped me change my delivery address within minutes. That kind of responsiveness keeps me coming back."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">TE</div>
+            <div><p class="author-name">Tunde E.</p><p class="author-role">Verified Buyer</p></div>
+          </div>
+        </div>
+        <div class="card testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <p class="testimonial-quote">"My go-to for gifts now. The packaging alone feels like a luxury brand — everyone I've bought for has loved it."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">CN</div>
+            <div><p class="author-name">Chioma N.</p><p class="author-role">Verified Buyer</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND PARTNERS -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="brand-strip reveal">
+        <span>NOVA</span><span>ATLAS&nbsp;&amp;&nbsp;CO</span><span>MERIDIAN</span><span>VOLT</span><span>KAIROS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter reveal">
+        <div>
+          <h3>Get 10% Off Your First Order</h3>
+          <p>Subscribe for early access to new arrivals and member-only offers.</p>
+        </div>
+        <div>
+          <form class="newsletter-form" novalidate>
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+            <input type="email" id="newsletter-email" placeholder="Enter your email">
+            <button type="submit" class="btn btn-dark">Subscribe</button>
+          <p class="field-error"></p>
+        </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <span class="footer-logo">LUXEMART</span>
+      <p class="footer-about">Modern shopping. Premium experience. Fashion, footwear, electronics, and home goods, curated for you.</p>
+      <div class="footer-socials">
+        <a href="#" class="icon-btn" aria-label="Facebook" style="background:transparent;border-color:rgba(255,255,255,0.15);color:#fff;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9v-2.9h2.54V9.79c0-2.5 1.5-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+        <a href="#" class="icon-btn" aria-label="Instagram" style="background:transparent;border-color:rgba(255,255,255,0.15);color:#fff;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:16px;height:16px;"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></a>
+        <a href="#" class="icon-btn" aria-label="X (Twitter)" style="background:transparent;border-color:rgba(255,255,255,0.15);color:#fff;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M18.9 3H22l-7.5 8.6L23 21h-6.6l-5.2-6.4L5.2 21H2l8-9.2L1.5 3h6.8l4.7 5.9L18.9 3zm-1.2 16.2h1.8L7.3 4.7H5.4l12.3 14.5z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="products.html">All Products</a></li>
+        <li><a href="products.html?category=Men">Men</a></li>
+        <li><a href="products.html?category=Women">Women</a></li>
+        <li><a href="products.html?category=Electronics">Electronics</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <p style="font-size:14px;margin-bottom:14px;">Subscribe for offers and updates.</p>
+      <form class="newsletter-form" style="max-width:100%;" novalidate>
+        <label for="footer-email" class="visually-hidden">Email address</label>
+        <input type="email" id="footer-email" placeholder="Your email" style="background:rgba(255,255,255,0.06);color:#fff;border:1px solid rgba(255,255,255,0.15);">
+        <button type="submit" class="btn btn-primary">Join</button>
+      <p class="field-error"></p>
+        </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 LUXEMART. All rights reserved.</span>
+    <span>Modern Shopping. Premium Experience.</span>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+</button>
+
+<script src="js/icons.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    ProductsAPI.renderProductGrid(document.getElementById('featured-grid'), ProductsAPI.getFeaturedProducts(8));
+    ProductsAPI.renderProductGrid(document.getElementById('new-arrivals-grid'), ProductsAPI.getNewArrivals(4));
+    ProductsAPI.renderProductGrid(document.getElementById('sale-grid'), ProductsAPI.getSaleProducts(4));
+
+    const catGrid = document.getElementById('category-grid');
+    const catGradients = [
+      'linear-gradient(160deg, rgba(42,62,177,0.9), rgba(31,46,134,0.95))',
+      'linear-gradient(160deg, rgba(26,26,29,0.9), rgba(46,46,51,0.95))',
+      'linear-gradient(160deg, rgba(201,162,39,0.85), rgba(143,111,23,0.95))',
+      'linear-gradient(160deg, rgba(91,93,107,0.9), rgba(51,52,61,0.95))',
+    ];
+    catGrid.innerHTML = ProductsAPI.CATEGORIES.map((cat, i) => `
+      <a href="products.html?category=${encodeURIComponent(cat.name)}" class="category-card" style="background-image:${catGradients[i % catGradients.length]}">
+        ${Icons[cat.icon] ? Icons[cat.icon]() : Icons.bag()}
+        <span>${cat.name}</span>
+      </a>
+    `).join('');
+  });
+</script>
+</body>
+</html>

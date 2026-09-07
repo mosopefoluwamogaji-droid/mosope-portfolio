@@ -1,0 +1,110 @@
+/* =============================================================
+   LUXEMART — Responsive Stylesheet
+   Breakpoints: 1440 (default/desktop), 1024, 768, 425, 375, 320
+   ============================================================= */
+
+/* ---------- Large desktop polish ---------- */
+@media (min-width: 1440px) {
+  .container { max-width: 1320px; }
+}
+
+/* ---------- 1024px — tablet landscape / small laptop ---------- */
+@media (max-width: 1024px) {
+  .product-grid { grid-template-columns: repeat(3, 1fr); }
+  .category-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--space-7); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+
+  .products-layout { grid-template-columns: 220px 1fr; }
+  .pd-layout { gap: var(--space-6); }
+  .cart-layout, .checkout-layout { grid-template-columns: 1fr; }
+  .contact-layout { grid-template-columns: 1fr; }
+}
+
+/* ---------- 768px — tablet portrait ---------- */
+@media (max-width: 768px) {
+  .main-nav { display: none; }
+  .mobile-menu-toggle { display: inline-flex; align-items: center; }
+  .header-actions .search-bar { display: none; }
+
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual { max-width: 320px; margin: 0 auto; }
+  .hero { text-align: center; padding: var(--space-8) 0; }
+  .hero-actions { justify-content: center; }
+  .hero p.lead { margin-left: auto; margin-right: auto; }
+  .section-head.center-mobile { text-align: center; margin-left: auto; margin-right: auto; }
+
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+  .category-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--space-5); }
+
+  .products-layout { grid-template-columns: 1fr; }
+  .filters-panel {
+    position: fixed; inset: 0 0 0 auto; width: min(320px, 88vw); height: 100vh;
+    border-radius: 0; z-index: 250; transform: translateX(100%);
+    transition: transform 250ms ease; overflow-y: auto;
+  }
+  .filters-panel.open { transform: translateX(0); }
+  .mobile-filter-toggle { display: inline-flex; }
+  .filters-backdrop {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 240;
+  }
+  .filters-backdrop.open { display: block; }
+
+  .pd-layout { grid-template-columns: 1fr; gap: var(--space-5); }
+  .newsletter { flex-direction: column; text-align: center; }
+  .newsletter-form { max-width: 100%; }
+
+  .cart-item { grid-template-columns: 70px 1fr; grid-template-areas: "media info" "media price"; }
+  .cart-item-media { grid-area: media; width: 70px; height: 70px; }
+  .cart-item-info { grid-area: info; }
+  .cart-item-price { grid-area: price; text-align: left; margin-top: var(--space-2); }
+
+  .form-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- 425px — large phones ---------- */
+@media (max-width: 425px) {
+  .container { padding: 0 var(--space-4); }
+  .header-inner { height: 66px; }
+  .section { padding: var(--space-7) 0; }
+  .section-tight { padding: var(--space-6) 0; }
+
+  .hero { padding: var(--space-7) 0; }
+  .hero h1 { font-size: 32px; }
+  .hero-actions { flex-direction: column; width: 100%; }
+  .hero-actions .btn { width: 100%; }
+
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-2); }
+  .product-info { padding: var(--space-3); }
+  .category-grid { grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  .pd-price { font-size: 26px; }
+  .pd-actions { flex-direction: column; }
+  .pd-actions .btn { width: 100%; }
+  .pd-tabs { overflow-x: auto; gap: var(--space-5); }
+
+  .checkout-steps { overflow-x: auto; }
+}
+
+/* ---------- 375px / 320px — small phones ---------- */
+@media (max-width: 375px) {
+  .logo { font-size: 18px; }
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .category-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .newsletter { padding: var(--space-5); }
+  .newsletter h3 { font-size: 21px; }
+}
+
+/* Prevent any horizontal overflow at any width */
+html, body { overflow-x: hidden; max-width: 100%; }
