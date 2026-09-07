@@ -57,4 +57,3 @@ Submit the form on your live site once both are deployed. A successful send show
 
 - To add a third project, copy one `.project-showcase` block in `index.html` and give it a fresh mockup treatment in the CSS (see `.project-mockup-crown` / `.project-mockup-luxe` for the pattern).
 - All section numbers, timeline steps, and skill categories are plain HTML — no JS-driven content generation — so they're easy to edit directly.
-# mosope-portfolio

@@ -163,7 +163,7 @@ function initHeroTextReveal() {
 
 // ---------- Contact form validation + real submission ----------
 // Update this once the contact backend is deployed (see contact-backend/README.md).
-const CONTACT_API_URL = 'https://portfolio-z39k.onrender.com/api/contact';
+const CONTACT_API_URL = 'https://your-portfolio-contact-backend.onrender.com/api/contact';
 
 function initContactForm() {
   const form = document.getElementById('contact-form');
