@@ -170,7 +170,9 @@ body.cursor-ready .cursor-dot, body.cursor-ready .cursor-ring { opacity: 1; }
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(5,7,10,0.98);
+  height: 100vh;
+  height: 100dvh;
+  background: var(--bg-void);
   backdrop-filter: blur(10px);
   z-index: 99;
   flex-direction: column;
